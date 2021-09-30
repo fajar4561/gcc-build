@@ -26,7 +26,7 @@ jobs:
         alias g++=g++-10
         git config --global user.name "${GITHUB_USER}"
         git config --global user.email "${GITHUB_EMAIL}"
-        git clone https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/mvaisakh/gcc-arm ../gcc-arm -b gcc-pull-requests
+        git clone https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/fajar4561/gcc-arm ../gcc-arm -b gcc-pull-requests
         rm -rf ../gcc-arm/*
         chmod a+x build-*.sh
         ./build-gcc.sh -a arm
