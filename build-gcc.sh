@@ -52,7 +52,7 @@ build_binutils() {
     --disable-werror \
     --disable-gdb \
     --enable-gold \
-    --with-pkgversion="Eva BinUtils"
+    --with-pkgversion="Signature BinUtils"
   make CFLAGS="-flto -O3 -pipe -ffunction-sections -fdata-sections" CXXFLAGS="-flto -O3 -pipe -ffunction-sections -fdata-sections" -j$(($(nproc --all) + 2))
   make install -j$(($(nproc --all) + 2))
   cd ../
@@ -80,7 +80,7 @@ build_gcc() {
     --disable-docs \
     --enable-default-ssp \
     --enable-languages=c,c++ \
-    --with-pkgversion="Eva GCC" \
+    --with-pkgversion="Signature GCC" \
     --with-newlib \
     --with-gnu-as \
     --with-gnu-ld \
