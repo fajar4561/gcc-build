@@ -6,7 +6,7 @@ on:
     - cron: '0 0 * * 0,4'
 
 jobs:
-  build:
+  build: 
 
     runs-on: ubuntu-20.04
 
